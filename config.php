@@ -19,17 +19,17 @@ define('API_SECRET', '');
 define('BASE_URL', 'http://localhost/bridge');
 
 /**
- * Your host.
+ * The hostname of your database server. Often this is ‘localhost’.
  */
 define('DB_HOST', 'localhost');
 
 /**
- * Mysql username.
+ * The username used to connect to the database.
  */
 define('DB_USERNAME', 'root');
 
 /**
- * Mysql password.
+ * The password used to connect to the database.
  */
 define('DB_PASSWORD', '');
 
@@ -42,6 +42,7 @@ define('DB_NAME', 'bridge_test_students_db');
 /**
  * Database driver.
  * Change it only if you are using different database. Default driver is for Mysql.
+ * Possible values are : mysqli, postgre, odbc, etc. Must be specified in lower case.
  */
 define('DB_DRIVER', 'mysqli');
 
