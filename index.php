@@ -306,6 +306,11 @@ switch (ENVIRONMENT)
 	define('VIEWPATH', $view_folder.DIRECTORY_SEPARATOR);
 
 /*
+ * Loading our custom config file
+ */
+require_once './config.php';
+
+/*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
  * --------------------------------------------------------------------
