@@ -308,7 +308,7 @@ switch (ENVIRONMENT)
 /*
  * Loading our custom config file
  */
-require_once './config.php';
+require './config.php';
 
 /*
  * --------------------------------------------------------------------
