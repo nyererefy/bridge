@@ -1,13 +1,25 @@
 <?php
 /**
+ * Name of your institution
+ * replace [Catholic University Of Health And Allied Sciences] with your own.
+ */
+define('INSTITUTION_NAME', 'Catholic University Of Health And Allied Sciences');
+
+/**
+ * Short form of INSTITUTION_NAME.
+ * replace [CUHAS] with your own
+ */
+define('INSTITUTION_ABBREVIATION_NAME', 'CUHAS');
+
+/**
  * This is represent your college/university.
- * (32 characters length)
+ * (32 characters length you get on dashboard)
  */
 define('API_ID', '');
 
 /**
  * Database name were university/college/students data are stored.
- * (64 characters length).
+ * (64 characters length you get on dashboard).
  * This should be kept private.
  */
 define('API_SECRET', '');
@@ -45,4 +57,9 @@ define('DB_NAME', 'bridge_test_students_db');
  * Possible values are : mysqli, postgre, odbc, etc. Must be specified in lower case.
  */
 define('DB_DRIVER', 'mysqli');
+
+/**
+ * If your system stores password as plain text (which is unlikely!) then make this false
+ */
+define('IS_PASSWORD_HASHED', true);
 
