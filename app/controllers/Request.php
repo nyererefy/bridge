@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Home extends Base_Controller
+class Request extends Base_Controller
 {
     function __construct()
     {
@@ -11,8 +11,8 @@ class Home extends Base_Controller
 
     function index()
     {
-        $view['view'] = 'i_home';
-        $this->load->view('base_layout', $view);
+        $response = Requests::get('https://github.com/timeline.json');
+        var_dump($response->body);
     }
 
     function sendData()
