@@ -15,6 +15,9 @@
 
     <!-- Custom styles for this template -->
     <link href="<?= base_url() ?>public/css/main.css" rel="stylesheet">
+
+    <!-- When placed here script from included view will work-->
+    <script src="<?= base_url() ?>public/vendor/jquery/jquery.min.js"></script>
 </head>
 
 <body>
@@ -69,7 +72,6 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="<?= base_url() ?>public/vendor/jquery/jquery.min.js"></script>
 <script src="<?= base_url() ?>public/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
