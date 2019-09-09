@@ -1,6 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+/**
+ * Class Request
+ * R
+ * http://requests.ryanmccue.info/docs/usage.html
+ */
 class Request extends Base_Controller
 {
     function __construct()
