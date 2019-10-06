@@ -55,9 +55,9 @@ define('DB_DRIVER', 'mysqli');
 
 /**
  * Database name were university/college/students data are stored.
- * replace [bridge_test_students_db] with your database name
+ * replace [registrar] with your database name
  */
-define('DB_NAME', 'bridge_test_students_db');
+define('DB_NAME', 'registrar');
 
 /**
  * N
@@ -77,7 +77,7 @@ define('TABLE_LOGIN_FIELD_ONE', 'email');
  * so if you have extra one too specify it here. default is empty and should be left empty if you don't have.
  * So this is optional.
  */
-define('TABLE_LOGIN_FIELD_TWO', '');
+define('TABLE_LOGIN_FIELD_TWO', 'reg_no');
 
 /**
  * Column/Field name which is holding student password
