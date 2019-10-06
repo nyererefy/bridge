@@ -6,6 +6,7 @@ class Home extends Base_Controller
     function __construct()
     {
         parent::__construct();
+        require_login();
         Requests::register_autoloader();
     }
 
