@@ -4,5 +4,4 @@
     <p class="lead">This is Just a simple script running on your University/College's
         server intended to help you sending your data to Nyererefy's server when you want to.
     </p>
-    <a href="#" class="btn btn-primary btn-lg">Join now!</a>
 </header>

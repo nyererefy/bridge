@@ -45,6 +45,8 @@ class Login extends Base_Controller
                 $session_data = array(
                     TABLE_PRIMARY_KEY => $data->{TABLE_PRIMARY_KEY},
                     TABLE_LOGIN_FIELD_ONE => $data->{TABLE_LOGIN_FIELD_ONE},
+                    TABLE_LOGIN_FIELD_TWO => $data->{TABLE_LOGIN_FIELD_TWO},
+                    'is_login' => true
                 );
                 $this->session->set_userdata($session_data);
 

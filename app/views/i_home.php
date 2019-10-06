@@ -1,6 +1,9 @@
+<?php
+$name = $this->session->{TABLE_LOGIN_FIELD_ONE} ?: $this->session->{TABLE_LOGIN_FIELD_TWO};
+?>
 <!-- Jumbotron Header -->
 <header class="jumbotron my-4">
-    <h1 class="display-5">Kateile, Welcome to Nyererefy Bridge!</h1>
+    <h1 class="display-5"><?= $name ?>, Welcome to Nyererefy Bridge!</h1>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt
         possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam
         repellat.</p>
