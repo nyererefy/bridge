@@ -44,9 +44,6 @@
                 </li>
                 <?php if (is_login()) { ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url() ?>settings">Settings</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="<?= base_url() ?>login/logout">Logout</a>
                     </li>
                 <?php } else { ?>
