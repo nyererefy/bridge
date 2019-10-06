@@ -16,14 +16,14 @@ define('INSTITUTION_ABBREVIATION_NAME', 'CUHAS');
  * This is represent your college/university.
  * (32 characters length you get on dashboard)
  */
-define('API_ID', '');
+define('CLIENT_ID', '');
 
 /**
  * Database name were university/college/students data are stored.
  * (64 characters length you get on dashboard).
  * This should be kept private.
  */
-define('API_SECRET', '');
+define('CLIENT_SECRET', '');
 
 /**
  * full URL where this app will be hosted.
@@ -88,6 +88,26 @@ define('TABLE_PASSWORD_FIELD', 'password');
  * Table primary key name
  */
 define('TABLE_PRIMARY_KEY', 'id');
+
+/**
+ * Name of Column/Field which is holding student reg_no. Replace [reg_no] with that.
+ */
+define('TABLE_REG_NO_FIELD', 'reg_no');
+
+/**
+ * Name of Column/Field which is holding student year. Replace [year] with that.
+ */
+define('TABLE_YEAR_FIELD', 'year');
+
+/**
+ * Name of Column/Field which is holding program identifier. Replace [programId] with that.
+ */
+define('TABLE_PROGRAM_IDENTIFIER_FIELD', 'programId');
+
+/**
+ * Name of Column/Field which is holding student email. Replace [email] with that.
+ */
+define('TABLE_EMAIL_FIELD', 'email');
 
 /**
  * If your system stores password as plain text (which is unlikely!) then make this false

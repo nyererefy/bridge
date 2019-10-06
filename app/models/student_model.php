@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: TEMBO MTOTO
- * Date: 8/31/2019
- * Time: 15:06
- */
 
 class Student_Model extends BASE_Model
 {
@@ -45,6 +39,20 @@ class Student_Model extends BASE_Model
         );
 
         return $this->response;
+    }
+
+    /**
+     * All logic for getting required data are done here.
+     * Nyererefy's servers need these [reg_no,email,program,year]
+     * If this doesn't apply with your system logic please create a new issue on Github.
+     * @return mixed
+     */
+    function get_student_data()
+    {
+        return $this->db
+            ->where(array(TABLE_PRIMARY_KEY => get_student_id()))
+            ->get(STUDENT_TABLE_NAME)
+            ->row();
     }
 
     function insertTestUser()
