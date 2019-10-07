@@ -63,7 +63,7 @@ class Login extends Base_Controller
                     ->set_status_header(401)
                     ->set_output(json_encode(array(
                         "status" => "fail",
-                        "message" => "Incorrect " . LOGIN_HINT . " or Password."
+                        "message" => 'Something went wrong, Please contact your Bridge administrator'
                     )));
             }
         }

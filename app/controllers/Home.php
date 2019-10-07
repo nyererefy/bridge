@@ -16,7 +16,6 @@ class Home extends Base_Controller
         $this->load->view('base_layout', $view);
     }
 
-    //todo remove settings. user will have to use nyererefy.
     function send_data()
     {
         $result = $this->student_model->get_student_data();
@@ -39,8 +38,22 @@ class Home extends Base_Controller
 
         $response = Requests::post('http://localhost:2000/api/v1/register', $headers, $data);
 
-        var_dump($response->body);
-
-        echo json_encode($response);
+        if ($response->success) {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_status_header(200)
+                ->set_output(json_encode(array(
+                    "status" => "success",
+                    "message" => "Your data has been sent successfully! You can now login to Nyererefy"
+                )));
+        } else {
+            return $this->output
+                ->set_content_type('application/json')
+                ->set_status_header(401)
+                ->set_output(json_encode(array(
+                    "status" => "fail",
+                    "message" => "Something went wrong, Please contact your Bridge administrator!"
+                )));
+        }
     }
 }
