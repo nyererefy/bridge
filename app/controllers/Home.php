@@ -27,7 +27,8 @@ class Home extends Base_Controller
             'regNo' => $result->{TABLE_REG_NO_FIELD},
             'email' => $result->{TABLE_EMAIL_FIELD},
             'year' => $result->{TABLE_YEAR_FIELD},
-            'programIdentifier' => $result->{TABLE_PROGRAM_IDENTIFIER_FIELD}
+            'programIdentifier' => $result->{TABLE_PROGRAM_IDENTIFIER_FIELD},
+            // or 'programIdentifier' => discover_program_identifier($result->{TABLE_REG_NO_FIELD})
         );
 
         // These can be obtained in Nyererefy's admin dashboard.
