@@ -44,6 +44,9 @@
                 </li>
                 <?php if (is_login()) { ?>
                     <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url() ?>settings">Settings</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="<?= base_url() ?>login/logout">Logout</a>
                     </li>
                 <?php } else { ?>
@@ -59,7 +62,7 @@
 <!-- Page Content -->
 <div class="container">
     <!-- Dynamic view are rendered here -->
-    <div class="row text-center">
+    <div class=" text-center">
         <?php include 'i_alert.php' ?>
 
         <?php $this->load->view($view) ?>
@@ -73,7 +76,7 @@
     <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Nyererefy 2017-<?= date("Y") ?></p>
         <p class="m-0 text-center text-white">This is an open source application, Source code is available on
-            <a href="https://github.com/nyererefy/bridge">Github</a>
+            <a href="https://github.com/nyererefy/nyererefy-bridge">Github</a>
         </p>
     </div>
     <!-- /.container -->
