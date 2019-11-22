@@ -5,42 +5,44 @@ $form = array(
     'id' => 'student_login_form'
 );
 ?>
-<header class="jumbotron my-4">
-    <div class="login-form">
-        <?= form_open('login/submit', $form) ?>
-        <div class="top">
-            <h4><?= INSTITUTION_ABBREVIATION_NAME . '-' . 'Nyererefy Bridge' ?></h4>
-            <div class="text-center" id="loading" hidden>
-                <div class="spinner-border text-primary" role="status">
-                    <span class="sr-only">Loading...</span>
+<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+    <header class="jumbotron my-4">
+        <div class="login-form ">
+            <?= form_open('login/submit', $form) ?>
+            <div class="top">
+                <h4><?= INSTITUTION_ABBREVIATION_NAME . '-' . 'Nyererefy Bridge' ?></h4>
+                <div class="text-center" id="loading" hidden>
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
                 </div>
             </div>
+            <div class="form-area">
+                <div class="alert alert-danger" id="error_div" hidden>
+                </div>
+                <div class="group mt-2">
+                    <input type="text"
+                           name="login"
+                           class="form-control"
+                           placeholder="Enter <?= LOGIN_HINT ?>"
+                           required>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="group mt-2">
+                    <input type="password"
+                           name="password"
+                           class="form-control"
+                           placeholder="Enter Password"
+                           required>
+                    <i class="fa fa-key"></i>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mt-2">LOGIN</button>
+                <span><a href="#" id="btn-bhv" class="btn-nux btn btn-link pull-right">Need help?</a></span>
+            </div>
+            <?= form_close() ?>
         </div>
-        <div class="form-area">
-            <div class="alert alert-danger" id="error_div" hidden>
-            </div>
-            <div class="group mt-2">
-                <input type="text"
-                       name="login"
-                       class="form-control"
-                       placeholder="Enter <?= LOGIN_HINT ?>"
-                       required>
-                <i class="fa fa-user"></i>
-            </div>
-            <div class="group mt-2">
-                <input type="password"
-                       name="password"
-                       class="form-control"
-                       placeholder="Enter Password"
-                       required>
-                <i class="fa fa-key"></i>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block mt-2">LOGIN</button>
-            <span><a href="#" id="btn-bhv" class="btn-nux btn btn-link pull-right">Need help?</a></span>
-        </div>
-        <?= form_close() ?>
-    </div>
-</header>
+    </header>
+</div>
 
 <script>
     $(document).ready(function () {
