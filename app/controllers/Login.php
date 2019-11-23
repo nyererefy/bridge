@@ -42,10 +42,14 @@ class Login extends Base_Controller
             $data = $response['data'];
 
             if ($data) {
+                /*
+                 * Only 3 things need to be stored in session {id,email and reg_no} so change these fields in order to
+                 * get those fields.
+                 */
                 $session_data = array(
-                    TABLE_PRIMARY_KEY => $data->{TABLE_PRIMARY_KEY},
-                    TABLE_LOGIN_FIELD_ONE => $data->{TABLE_LOGIN_FIELD_ONE},
-                    TABLE_LOGIN_FIELD_TWO => $data->{TABLE_LOGIN_FIELD_TWO},
+                    TABLE_PRIMARY_KEY => $data->{TABLE_PRIMARY_KEY}, //This should be id
+                    TABLE_LOGIN_FIELD_ONE => $data->{TABLE_LOGIN_FIELD_ONE}, //This should be email
+                    TABLE_REG_NO_FIELD => $data->{TABLE_REG_NO_FIELD}, //This should be reg no. This is must...
                     'is_login' => true
                 );
                 $this->session->set_userdata($session_data);
