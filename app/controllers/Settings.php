@@ -33,7 +33,7 @@ class  Settings extends Base_Controller
             'CLIENT_SECRET' => CLIENT_SECRET
         );
 
-        $response = Requests::post('http://localhost:2000/api/v1/reset', $headers, $data);
+        $response = Requests::post(NYEREREFY_SERVER_URL . '/api/v1/reset', $headers, $data);
 
         return $this->output
             ->set_content_type('application/json')

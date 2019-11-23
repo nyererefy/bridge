@@ -137,5 +137,12 @@ define('TEST_PASSWORD', 'test1234');
  */
 define('ENABLE_FAKER', false);
 
+/**
+ * URL of Nyererefy's server
+ */
+define('NYEREREFY_SERVER_URL', 'http://localhost:2000');
+//define('NYEREREFY_SERVER_URL', 'https://nyererefy.com');
+
+
 
 
