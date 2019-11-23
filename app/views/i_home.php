@@ -50,14 +50,10 @@ $form = array(
                     $("#loading").attr("hidden", "true");
                 },
                 success: function (response) {
-                    if (response.status === "success") {
-                        $('#success_div').removeAttr('hidden').append(response.message);
-                    } else {
-                        $('#error_div').removeAttr('hidden').append(response.message);
-                    }
+                    $('#success_div').removeAttr('hidden').append(response.message);
                 },
                 error: function (error) {
-                    $('#error_div').removeAttr('hidden').append(error.responseText);
+                    $('#error_div').removeAttr('hidden').append(error.responseJSON.message);
                 }
             });
         });

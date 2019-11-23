@@ -40,22 +40,11 @@ class Home extends Base_Controller
 
         $response = Requests::post('http://localhost:2000/api/v1/register', $headers, $data);
 
-        if ($response->success) {
-            return $this->output
-                ->set_content_type('application/json')
-                ->set_status_header(200)
-                ->set_output(json_encode(array(
-                    "status" => "success",
-                    "message" => "Your data has been sent successfully! You can now login to Nyererefy"
-                )));
-        } else {
-            return $this->output
-                ->set_content_type('application/json')
-                ->set_status_header(401)
-                ->set_output(json_encode(array(
-                    "status" => "fail",
-                    "message" => "Something went wrong, Please contact your Bridge administrator!"
-                )));
-        }
+        return $this->output
+            ->set_content_type('application/json')
+            ->set_status_header($response->status_code)
+            ->set_output(json_encode(array(
+                "message" => json_decode($response->body)->message
+            )));
     }
 }
