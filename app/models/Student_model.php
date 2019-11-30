@@ -1,6 +1,6 @@
 <?php
 
-class Student_Model extends BASE_Model
+class Student_model extends BASE_Model
 {
     private $error, $response = array(), $data;
 
