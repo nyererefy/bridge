@@ -1,6 +1,6 @@
 <!-- Jumbotron Header -->
 <header class="jumbotron my-4">
-    <h1 class="display-5">Have you forgotten your Nyererefy Password?</h1>
+    <h1 class="display-5">Have you forgotten your Nyererefy Pin?</h1>
     <p class="lead">You can easily reset your account directly from this bridge!
         You need to logout from all devices and then
         click the button below</p>

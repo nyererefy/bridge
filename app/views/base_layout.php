@@ -40,6 +40,9 @@
                     </li>
                 <?php } ?>
                 <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url() ?>apps">Apps</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="<?= base_url() ?>about">About</a>
                 </li>
                 <?php if (is_login()) { ?>
