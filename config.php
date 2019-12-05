@@ -18,14 +18,14 @@ define('INSTITUTION_ABBREVIATION_NAME', 'CUHAS');
  * This should be kept private.
  * Replace with your own uuid.
  */
-define('CLIENT_ID', '71c8c4ed-ab2a-436c-9acc-eeb46da51513');
+define('CLIENT_ID', '5d94c158-569e-4530-adfd-b5e4a70bbb87');
 
 /**
  * (64 characters length you get on dashboard).
  * This should be kept private.
  * Replace with your own secret.
  */
-define('CLIENT_SECRET', '0b597e22e42955e45d29f787a46cc72772ce91e869b7ab568d12cb448dfa1d0a');
+define('CLIENT_SECRET', 'd850ce512508a5150a4984c679bd0a0fa04333caf37f4036a8f9dfd41806c430');
 
 /**
  * full URL where this app will be hosted.
