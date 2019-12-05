@@ -37,7 +37,8 @@ $form = array(
                     <i class="fa fa-key"></i>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block mt-2">LOGIN</button>
-                <span><a href="#" id="btn-bhv" class="btn-nux btn btn-link pull-right">Need help?</a></span>
+                <span><a href="https://t.me/joinchat/HLm-dBMwS9j6rzGnr8fS1A" id="btn-bhv"
+                         class="btn-nux btn btn-link pull-right">Need help?</a></span>
             </div>
             <?= form_close() ?>
         </div>
