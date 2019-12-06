@@ -68,14 +68,25 @@ function discover_program_identifier($reg_no)
 {
     $output = null;
 
-    //Todo all programs should be here with their respective identifiers matching the ones registered on Nyererefy.
     $bpharm = new Identifier();
-    $bpharm->pattern = "TEST";
-    $bpharm->output = "12231";
+    $bpharm->pattern = "CUHASBP";
+    $bpharm->output = "BP";
+
+    $bpharm = new Identifier();
+    $bpharm->pattern = "CUHASBSN";
+    $bpharm->output = "BSN";
+
+    $bpharm = new Identifier();
+    $bpharm->pattern = "CUHASBMLS";
+    $bpharm->output = "BMLS";
 
     $md = new Identifier();
     $md->pattern = "CUHASMD";
-    $md->output = "md";
+    $md->output = "MD";
+
+    $bpharm = new Identifier();
+    $bpharm->pattern = "CUHASDPS";
+    $bpharm->output = "DPS";
 
     //all above should be registered in this array.
     $identifiers = array($bpharm, $md);
