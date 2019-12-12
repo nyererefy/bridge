@@ -40,21 +40,21 @@
                     </li>
                 <?php } ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url() ?>apps">Apps</a>
+                    <a class="nav-link" href="<?= base_url() ?>index.php/apps">Apps</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url() ?>about">About</a>
+                    <a class="nav-link" href="<?= base_url() ?>index.php/about">About</a>
                 </li>
                 <?php if (is_login()) { ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url() ?>settings">Settings</a>
+                        <a class="nav-link" href="<?= base_url() ?>index.php/settings">Settings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url() ?>login/logout">Logout</a>
+                        <a class="nav-link" href="<?= base_url() ?>index.php/login/logout">Logout</a>
                     </li>
                 <?php } else { ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url() ?>login">Login</a>
+                        <a class="nav-link" href="<?= base_url() ?>index.php/login">Login</a>
                     </li>
                 <?php } ?>
             </ul>
