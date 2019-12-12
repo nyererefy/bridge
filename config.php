@@ -140,9 +140,7 @@ define('ENABLE_FAKER', false);
 /**
  * URL of Nyererefy's server
  */
-define('NYEREREFY_SERVER_URL', 'http://localhost:2000');
-//define('NYEREREFY_SERVER_URL', 'https://nyererefy.com');
-
+define('NYEREREFY_SERVER_URL', 'https://nyererefy.com');
 
 
 
